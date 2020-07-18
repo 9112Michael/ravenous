@@ -26,6 +26,10 @@ const businesses = [
 ];
 
 class App extends React.Component {
+  searchYelp(term, location, sortBy) {
+    console.log(`Searching Yelp for ${term}, ${location} and ${sortBy}`);
+  } 
+
   render() {
     return (
       <div className="App">
