@@ -8,6 +8,14 @@ const Yelp = {
             headers: {
             Authorization: `Bearer ${apiKey}`
             }
-        });
+        }).then((response) => {
+            return response.json();
+        }).then((jsonResponse) => {
+            if (jsonResponse.businesses) {
+                return jsonResponse.businesses.map(business => {
+                    
+                });
+            }
+        } 
     }
 }
