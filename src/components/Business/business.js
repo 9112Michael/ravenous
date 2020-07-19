@@ -3,11 +3,11 @@ import './Business.css';
 
 class Business extends React.Component {
     render() {
-      const { business} = this.props;
+      const { business } = this.props;
         return (
             <div className="Business">
   <div className="image-container">
-    <img src='https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg' alt=''/>
+    <img src={business.imageSrc} alt=''/>
   </div>
     <h2>{business.name}</h2>
   <div className="Business-information">
